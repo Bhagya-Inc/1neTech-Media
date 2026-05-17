@@ -34,20 +34,59 @@
   });
 
   /* contact form */
-  const form = document.getElementById('contactForm');
-  const sbtn = document.getElementById('submitBtn');
-  form.addEventListener('submit', e => {
+  // const form = document.getElementById('contactForm');
+  // const sbtn = document.getElementById('submitBtn');
+  // form.addEventListener('submit', e => {
+  //   e.preventDefault();
+  //   sbtn.disabled = true;
+  //   sbtn.textContent = 'Sending…';
+  //   setTimeout(() => {
+  //     sbtn.textContent = '✅ Sent! We\'ll be in touch soon.';
+  //     sbtn.style.background = '#16a34a';
+  //     form.reset();
+  //     setTimeout(() => {
+  //       sbtn.disabled = false;
+  //       sbtn.style.background = '';
+  //       sbtn.innerHTML = 'Send Message <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" style="width:16px;height:16px;vertical-align:middle;margin-left:4px"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>';
+  //     }, 4000);
+  //   }, 1500);
+  // });
+
+// Mailer function
+  emailjs.init("5THLu50MhNoIcPsPx");
+const form = document.getElementById("contactForm");
+
+  form.addEventListener("submit", function (e) {
     e.preventDefault();
-    sbtn.disabled = true;
-    sbtn.textContent = 'Sending…';
-    setTimeout(() => {
-      sbtn.textContent = '✅ Sent! We\'ll be in touch soon.';
-      sbtn.style.background = '#16a34a';
-      form.reset();
-      setTimeout(() => {
-        sbtn.disabled = false;
-        sbtn.style.background = '';
-        sbtn.innerHTML = 'Send Message <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" style="width:16px;height:16px;vertical-align:middle;margin-left:4px"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>';
-      }, 4000);
-    }, 1500);
+
+    const submitBtn = document.getElementById("submitBtn");
+
+    submitBtn.disabled = true;
+    submitBtn.innerText = "Sending...";
+
+    const templateParams = {
+      name: document.getElementById("fname").value,
+      email: document.getElementById("femail").value,
+      business: document.getElementById("fbiz").value,
+      message: document.getElementById("fmsg").value,
+    };
+
+    emailjs
+      .send(
+        "service_6oj8mwo",
+        "template_zr4wk9l",
+        templateParams
+      )
+      .then(function () {
+        alert("Message sent successfully!");
+        form.reset();
+      })
+      .catch(function (error) {
+        console.error(error);
+        alert("Failed to send message");
+      })
+      .finally(function () {
+        submitBtn.disabled = false;
+        submitBtn.innerText = "Send Message";
+      });
   });
