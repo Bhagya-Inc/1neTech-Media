@@ -1703,6 +1703,311 @@
       margin-right: 0;
     }
 
+    /* ─────────────────────────────────────────────────────────────
+   TESTIMONIALS CAROUSEL  –  1neTech Media
+───────────────────────────────────────────────────────────── */
+
+    /* ── Section wrapper ── */
+    .tc-section {
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Ambient glow blobs */
+    .tc-section::before {
+      content: '';
+      position: absolute;
+      top: -120px;
+      right: -120px;
+      width: 420px;
+      height: 420px;
+      border-radius: 50%;
+      background: radial-gradient(circle,
+          rgba(250, 204, 21, 0.07) 0%,
+          transparent 70%);
+      pointer-events: none;
+    }
+
+    .tc-section::after {
+      content: '';
+      position: absolute;
+      bottom: -100px;
+      left: -80px;
+      width: 320px;
+      height: 320px;
+      border-radius: 50%;
+      background: radial-gradient(circle,
+          rgba(59, 130, 246, 0.06) 0%,
+          transparent 70%);
+      pointer-events: none;
+    }
+
+    /* ── Inner container ── */
+    .tc-inner {
+      position: relative;
+      z-index: 1;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    /* ── Chip badge ── */
+    .tc-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(250, 204, 21, 0.1);
+      border: 1px solid rgba(250, 204, 21, 0.25);
+      color: #facc15;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      border-radius: 100px;
+      margin-bottom: 20px;
+    }
+
+    /* Small dot inside chip */
+    .tc-dot-sm {
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      background: #facc15;
+      border-radius: 50%;
+    }
+
+    /* ── Section title ── */
+    .tc-title {
+      text-align: center;
+      margin-bottom: 48px !important;
+    }
+
+    .tc-title em {
+      color: #facc15;
+      font-style: normal;
+    }
+
+    /* ── Track wrapper ── */
+    .tc-track-wrap {
+      position: relative;
+      overflow: hidden;
+      border-radius: 20px;
+    }
+
+    /* ── Sliding track ── */
+    .tc-track {
+      display: flex;
+      transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1);
+      will-change: transform;
+    }
+
+    /* ── Individual slide ── */
+    .tc-slide {
+      min-width: 100%;
+      padding: 2px;
+    }
+
+    /* ── Card ── */
+    .tc-card {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.09);
+      border-radius: 20px;
+      padding: 40px 44px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Top accent line */
+    .tc-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, #facc15, #f59e0b);
+      border-radius: 20px 20px 0 0;
+    }
+
+    /* ── Quote mark ── */
+    .tc-quote-mark {
+      display: block;
+      font-size: 80px;
+      color: rgba(250, 204, 21, 0.15);
+      font-family: Georgia, 'Times New Roman', serif;
+      line-height: 0.7;
+      margin-bottom: 20px;
+      user-select: none;
+    }
+
+    /* ── Review text ── */
+    .tc-text {
+      font-size: clamp(15px, 2vw, 17px);
+      color: rgba(255, 255, 255, 0.82);
+      line-height: 1.78;
+      font-weight: 300;
+      margin-bottom: 32px;
+    }
+
+    /* ── Author row ── */
+    .tc-author {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    /* ── Avatar ── */
+    .tc-avatar {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 17px;
+      font-weight: 700;
+      flex-shrink: 0;
+      border: 2px solid rgba(250, 204, 21, 0.25);
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* Avatar variants */
+    .tc-av-yellow {
+      background: rgba(250, 204, 21, 0.12);
+      color: #facc15;
+      border-color: rgba(250, 204, 21, 0.3);
+    }
+
+    .tc-av-blue {
+      background: rgba(59, 130, 246, 0.12);
+      color: #60a5fa;
+      border-color: rgba(59, 130, 246, 0.3);
+    }
+
+    .tc-av-green {
+      background: rgba(16, 185, 129, 0.12);
+      color: #34d399;
+      border-color: rgba(16, 185, 129, 0.3);
+    }
+
+    .tc-av-red {
+      background: rgba(239, 68, 68, 0.12);
+      color: #f87171;
+      border-color: rgba(239, 68, 68, 0.3);
+    }
+
+    .tc-av-purple {
+      background: rgba(168, 85, 247, 0.12);
+      color: #c084fc;
+      border-color: rgba(168, 85, 247, 0.3);
+    }
+
+    /* ── Author info ── */
+    .tc-info h4 {
+      font-size: 15px;
+      font-weight: 600;
+      color: #ffffff;
+      margin: 0 0 2px;
+    }
+
+    .tc-info p {
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.48);
+      font-weight: 400;
+      margin: 0;
+    }
+
+    /* ── Star rating ── */
+    .tc-stars {
+      color: #facc15;
+      font-size: 13px;
+      letter-spacing: 1px;
+      margin-bottom: 6px;
+    }
+
+    /* ── Controls ── */
+    .tc-controls {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 36px;
+    }
+
+    /* Arrow buttons */
+    .tc-btn {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 18px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition:
+        background 0.2s,
+        border-color 0.2s,
+        color 0.2s,
+        transform 0.15s;
+      flex-shrink: 0;
+    }
+
+    .tc-btn:hover {
+      background: rgba(250, 204, 21, 0.15);
+      border-color: rgba(250, 204, 21, 0.45);
+      color: #facc15;
+      transform: scale(1.08);
+    }
+
+    .tc-btn:active {
+      transform: scale(0.96);
+    }
+
+    /* ── Dots ── */
+    .tc-dots {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .tc-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.2);
+      cursor: pointer;
+      border: none;
+      padding: 0;
+      transition:
+        background 0.3s,
+        width 0.3s,
+        border-radius 0.3s;
+    }
+
+    .tc-dot.active {
+      background: #facc15;
+      width: 24px;
+      border-radius: 4px;
+    }
+
+    /* ── Mobile ── */
+    @media (max-width: 600px) {
+      .tc-card {
+        padding: 28px 24px;
+      }
+
+      .tc-quote-mark {
+        font-size: 56px;
+      }
+
+      .tc-controls {
+        gap: 12px;
+      }
+    }
+
     /* ════════════════════════════════════════════════════
        RESPONSIVE
     ════════════════════════════════════════════════════ */

@@ -1,126 +1,99 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="1neTech Media – Integrated digital marketing agency combining strategy, creativity, and technology to build brands that scale. Think One. Grow Beyond."
-    />
-    <meta
-      name="keywords"
-      content="digital marketing agency, SEO, performance marketing, social media management, brand strategy, website development"
-    />
-    <meta
-      property="og:title"
-      content="1neTech Media – Think One. Grow Beyond."
-    />
-    <meta
-      property="og:description"
-      content="Integrated digital solutions that drive measurable growth."
-    />
-    <meta property="og:type" content="website" />
-    <title>1neTech Media – Think One. Grow Beyond.</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@700&display=swap"
-      rel="stylesheet"
-    />
 
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <!-- MOBILE DRAWER ─────────────────────────────────── -->
-    <nav class="drawer" id="drawer" aria-label="Mobile navigation">
-      <button class="dclose" id="dcls" aria-label="Close menu">✕</button>
-      <a href="#home" onclick="cdraw()">Home</a>
-      <a href="#about" onclick="cdraw()">About</a>
-      <a href="#services" onclick="cdraw()">Services</a>
-      <a href="#why" onclick="cdraw()">Why Choose Us</a>
-      <a href="#contact" onclick="cdraw()">Contact</a>
-      <a href="#contact" onclick="cdraw()" class="btn btn-blue"
-        >Get a Free Consultation</a
-      >
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="1neTech Media – Integrated digital marketing agency combining strategy, creativity, and technology to build brands that scale. Think One. Grow Beyond." />
+  <meta name="keywords"
+    content="digital marketing agency, SEO, performance marketing, social media management, brand strategy, website development" />
+  <meta property="og:title" content="1neTech Media – Think One. Grow Beyond." />
+  <meta property="og:description" content="Integrated digital solutions that drive measurable growth." />
+  <meta property="og:type" content="website" />
+  <title>1neTech Media – Think One. Grow Beyond.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@700&display=swap"
+    rel="stylesheet" />
 
-    <!-- HEADER ────────────────────────────────────────── -->
-    <header id="hdr" role="banner">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- MOBILE DRAWER ─────────────────────────────────── -->
+  <nav class="drawer" id="drawer" aria-label="Mobile navigation">
+    <button class="dclose" id="dcls" aria-label="Close menu">✕</button>
+    <a href="#home" onclick="cdraw()">Home</a>
+    <a href="#about" onclick="cdraw()">About</a>
+    <a href="#services" onclick="cdraw()">Services</a>
+    <a href="#why" onclick="cdraw()">Why Choose Us</a>
+    <a href="#contact" onclick="cdraw()">Contact</a>
+    <a href="#contact" onclick="cdraw()" class="btn btn-blue">Get a Free Consultation</a>
+  </nav>
+
+  <!-- HEADER ────────────────────────────────────────── -->
+  <header id="hdr" role="banner">
+    <div class="wrap">
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#home" class="logo" aria-label="1neTech Media">
+          <span><span class="ac">1ne</span>Tech Media</span>
+        </a>
+        <ul class="nav-links" role="list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#why">Why Choose Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a href="#contact" class="btn btn-yellow">Get a Free Consultation</a>
+        </div>
+        <button class="ham" id="hamBtn" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO ──────────────────────────────────────────── -->
+  <section id="home" aria-label="Hero">
+    <div id="hero">
+      <div class="hdeco" aria-hidden="true"></div>
+      <div class="hgrid" aria-hidden="true"></div>
+      <div class="hring" aria-hidden="true"></div>
       <div class="wrap">
-        <nav class="nav" aria-label="Main navigation">
-          <a href="#home" class="logo" aria-label="1neTech Media">
-            <span><span class="ac">1ne</span>Tech Media</span>
-          </a>
-          <ul class="nav-links" role="list">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#why">Why Choose Us</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-          <div class="nav-cta">
-            <a href="#contact" class="btn btn-yellow"
-              >Get a Free Consultation</a
-            >
-          </div>
-          <button
-            class="ham"
-            id="hamBtn"
-            aria-label="Open menu"
-            aria-expanded="false"
-          >
-            <span></span><span></span><span></span>
-          </button>
-        </nav>
-      </div>
-    </header>
-
-    <!-- HERO ──────────────────────────────────────────── -->
-    <section id="home" aria-label="Hero">
-      <div id="hero">
-        <div class="hdeco" aria-hidden="true"></div>
-        <div class="hgrid" aria-hidden="true"></div>
-        <div class="hring" aria-hidden="true"></div>
-        <div class="wrap">
-          <div class="hero-inner">
-            <!-- text -->
-            <div class="hero-text">
-              <div class="hero-chip"><i></i>Digital Marketing Agency</div>
-              <h1 class="h1">
-                Think One. <br>
-                <span class="yl">Grow Beyond.</span>
-              </h1>
-              <p class="hero-p">
-                We combine strategy, creativity, and technology to build brands
-                that scale with confidence.
-              </p>
-              <div class="hero-btns">
-                <a href="#contact" class="btn btn-yellow">
-                  Start Growing
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    stroke-width="2.5"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-                    />
-                  </svg>
-                </a>
-                <a href="#services" class="btn btn-ghost">View Services</a>
-              </div>
-              <!-- <div class="hero-stats">
+        <div class="hero-inner">
+          <!-- text -->
+          <div class="hero-text">
+            <div class="hero-chip"><i></i>Digital Marketing Agency</div>
+            <h1 class="h1">
+              Think One. <br>
+              <span class="yl">Grow Beyond.</span>
+            </h1>
+            <p class="hero-p">
+              We combine strategy, creativity, and technology to build brands
+              that scale with confidence.
+            </p>
+            <div class="hero-btns">
+              <a href="#contact" class="btn btn-yellow">
+                Start Growing
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                  stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                </svg>
+              </a>
+              <a href="#services" class="btn btn-ghost">View Services</a>
+            </div>
+            <!-- <div class="hero-stats">
             <div><div class="hs-n">200+</div><div class="hs-l">Brands Scaled</div></div>
             <div><div class="hs-n">98%</div><div class="hs-l">Client Retention</div></div>
             <div><div class="hs-n">5×</div><div class="hs-l">Average ROI</div></div>
           </div> -->
-            </div>
-            <!-- dashboard card -->
-            <!-- <div class="hero-card" aria-hidden="true">
+          </div>
+          <!-- dashboard card -->
+          <!-- <div class="hero-card" aria-hidden="true">
           <div class="hcrow">
             <div class="hcico">📈</div>
             <div>
@@ -139,325 +112,265 @@
             <span class="hcbadge">⚡ SEO: 96</span>
           </div>
         </div> -->
-          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ABOUT ─────────────────────────────────────────── -->
-    <!-- Changed the About Us tag to center -->
-    <section id="about" class="sec" aria-label="About 1neTech Media">
-      <div class="wrap">
-        <div class="sechd rv">
-          <span class="chip">About Us</span>
+  <!-- ABOUT ─────────────────────────────────────────── -->
+  <!-- Changed the About Us tag to center -->
+  <section id="about" class="sec" aria-label="About 1neTech Media">
+    <div class="wrap">
+      <div class="sechd rv">
+        <span class="chip">About Us</span>
+      </div>
+      <div class="about-grid">
+        <!-- visual -->
+        <div class="rv">
+          <div class="abox">
+            <!-- Changed years from 7+ to 2+ -->
+            <span class="abig">2+</span>
+            <p>
+              Years delivering high-performance digital marketing solutions
+              that drive real, measurable results for brands across
+              industries.
+            </p>
+            <div class="apills">
+              <span class="apill">Strategy-First</span>
+              <span class="apill">Data-Driven</span>
+              <span class="apill">ROI-Focused</span>
+            </div>
+          </div>
         </div>
-        <div class="about-grid">
-          <!-- visual -->
+        <!-- content -->
+        <div class="about-content">
           <div class="rv">
-            <div class="abox">
-              <!-- Changed years from 7+ to 2+ -->
-              <span class="abig">2+</span>
-              <p>
-                Years delivering high-performance digital marketing solutions
-                that drive real, measurable results for brands across
-                industries.
-              </p>
-              <div class="apills">
-                <span class="apill">Strategy-First</span>
-                <span class="apill">Data-Driven</span>
-                <span class="apill">ROI-Focused</span>
-              </div>
-            </div>
-          </div>
-          <!-- content -->
-          <div class="about-content">
-            <div class="rv">
-              <!-- <span class="chip">About Us</span> -->
-              <h2 class="h2">Built to <em>Grow</em> Brands That Matter</h2>
-              <p class="sub">
-                1neTech Media is a mission-driven digital marketing agency that
-                transforms businesses through strategic thinking, impactful
-                communication, and technology-powered execution.
-              </p>
-            </div>
-          </div>
-          </div>
-
-          <!-- Changed the cards layout to 4 in a row from 2 x 2 in 2 rows -->
-           <div class="about-grid" style="margin-top: 30px;">
-          <div class="acards rv d1">
-            <div class="acard">
-              <div class="aico">🎯</div>
-              <h4>Strategic Digital Marketing</h4>
-              <p>
-                Full-funnel strategies designed to attract, convert, and retain
-                your ideal customers at scale.
-              </p>
-            </div>
-            <div class="acard">
-              <div class="aico">📣</div>
-              <h4>Impactful Communication</h4>
-              <p>
-                Messaging that resonates, compels action, and builds lasting
-                brand equity in your market.
-              </p>
-            </div>
-          </div>
-          <div class="acards rv d1">
-            <div class="acard">
-              <div class="aico">🚀</div>
-              <h4>High-Performance Websites</h4>
-              <p>
-                SEO-optimized, conversion-focused websites built to rank, load
-                fast, and turn visitors into clients.
-              </p>
-            </div>
-            <div class="acard">
-              <div class="aico">📊</div>
-              <h4>Data-Driven Solutions</h4>
-              <p>
-                Every decision backed by analytics. We measure, iterate, and
-                optimize for scalable growth.
-              </p>
-            </div>
+            <!-- <span class="chip">About Us</span> -->
+            <h2 class="h2">Built to <em>Grow</em> Brands That Matter</h2>
+            <p class="sub">
+              1neTech Media is a mission-driven digital marketing agency that
+              transforms businesses through strategic thinking, impactful
+              communication, and technology-powered execution.
+            </p>
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- SERVICES ──────────────────────────────────────── -->
-    <section id="services" class="sec" aria-label="Our Services">
-      <div class="wrap">
-        <!-- Added a max-width inline style for making tagline in single line visible -->
-        <div class="sechd rv" style="max-width: 800px">
-          <span class="chip">What We Do</span>
-          <h2 class="h2">Services Built for <b>Real Results</b></h2>
-          <p class="sub" style="max-width: fit-content">
-            From social media to SEO to brand strategy — integrated solutions
-            that move the needle.
+      <!-- Changed the cards layout to 4 in a row from 2 x 2 in 2 rows -->
+      <div class="about-grid" style="margin-top: 30px;">
+        <div class="acards rv d1">
+          <div class="acard">
+            <div class="aico">🎯</div>
+            <h4>Strategic Digital Marketing</h4>
+            <p>
+              Full-funnel strategies designed to attract, convert, and retain
+              your ideal customers at scale.
+            </p>
+          </div>
+          <div class="acard">
+            <div class="aico">📣</div>
+            <h4>Impactful Communication</h4>
+            <p>
+              Messaging that resonates, compels action, and builds lasting
+              brand equity in your market.
+            </p>
+          </div>
+        </div>
+        <div class="acards rv d1">
+          <div class="acard">
+            <div class="aico">🚀</div>
+            <h4>High-Performance Websites</h4>
+            <p>
+              SEO-optimized, conversion-focused websites built to rank, load
+              fast, and turn visitors into clients.
+            </p>
+          </div>
+          <div class="acard">
+            <div class="aico">📊</div>
+            <h4>Data-Driven Solutions</h4>
+            <p>
+              Every decision backed by analytics. We measure, iterate, and
+              optimize for scalable growth.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES ──────────────────────────────────────── -->
+  <section id="services" class="sec" aria-label="Our Services">
+    <div class="wrap">
+      <!-- Added a max-width inline style for making tagline in single line visible -->
+      <div class="sechd rv" style="max-width: 800px">
+        <span class="chip">What We Do</span>
+        <h2 class="h2">Services Built for <b>Real Results</b></h2>
+        <p class="sub" style="max-width: fit-content">
+          From social media to SEO to brand strategy — integrated solutions
+          that move the needle.
+        </p>
+      </div>
+      <div class="svcgrid">
+        <article class="svcard rv d1">
+          <div class="svico">📱</div>
+          <h3>Social Media Management</h3>
+          <p>
+            Strategic content calendars, community management, and performance
+            tracking across all major platforms to grow your brand's reach and
+            engagement.
           </p>
-        </div>
-        <div class="svcgrid">
-          <article class="svcard rv d1">
-            <div class="svico">📱</div>
-            <h3>Social Media Management</h3>
-            <p>
-              Strategic content calendars, community management, and performance
-              tracking across all major platforms to grow your brand's reach and
-              engagement.
-            </p>
-            <!-- Added a hyperlink for redirecting to individul services in future, currently redirecting to self -->
-            <a href="#" style="text-decoration: none">
-              <span class="svlnk"
-                >Learn More
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  stroke-width="2.5"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-                  />
-                </svg>
-              </span>
-            </a>
-          </article>
-          <article class="svcard rv d2">
-            <div class="svico">⚡</div>
-            <h3>Performance Marketing</h3>
-            <p>
-              Targeted paid campaigns across Google, Meta, and beyond —
-              engineered to maximize ROAS, reduce CAC, and deliver measurable
-              revenue growth every month.
-            </p>
-            <!-- Added a hyperlink for redirecting to individul services in future, currently redirecting to self -->
-            <a href="#" style="text-decoration: none">
-              <span class="svlnk"
-                >Learn More
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  stroke-width="2.5"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-                  />
-                </svg>
-              </span>
-            </a>
-          </article>
-          <article class="svcard rv d3">
-            <div class="svico">✍️</div>
-            <h3>Content Creation & Branding</h3>
-            <p>
-              Compelling copywriting, stunning visuals, and engaging videos that
-              tell your brand story and drive meaningful audience connection at
-              scale.
-            </p>
-            <!-- Added a hyperlink for redirecting to individul services in future, currently redirecting to self -->
-            <a href="#" style="text-decoration: none">
-              <span class="svlnk"
-                >Learn More
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  stroke-width="2.5"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-                  />
-                </svg>
-              </span>
-            </a>
-          </article>
-          <article class="svcard rv d1">
-            <div class="svico">🔍</div>
-            <h3>SEO & Growth Optimization</h3>
-            <p>
-              Technical SEO, keyword strategy, and authority building that
-              drives qualified organic traffic and positions your brand on page
-              one — permanently.
-            </p>
-            <!-- Added a hyperlink for redirecting to individul services in future, currently redirecting to self -->
-            <a href="#" style="text-decoration: none">
-              <span class="svlnk"
-                >Learn More
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  stroke-width="2.5"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-                  />
-                </svg>
-              </span>
-            </a>
-          </article>
-          <article class="svcard rv d2">
-            <div class="svico">💻</div>
-            <h3>Website Design & Development</h3>
-            <p>
-              Conversion-optimized, mobile-first websites built with modern tech
-              stacks — fast, beautiful, and engineered to turn visitors into
-              paying customers.
-            </p>
-            <!-- Added a hyperlink for redirecting to individul services in future, currently redirecting to self -->
-            <a href="#" style="text-decoration: none">
-              <span class="svlnk"
-                >Learn More
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  stroke-width="2.5"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-                  />
-                </svg>
-              </span>
-            </a>
-          </article>
-          <article class="svcard rv d3">
-            <div class="svico">🎨</div>
-            <h3>Brand Positioning & Strategy</h3>
-            <p>
-              Deep market research, competitor analysis, and positioning
-              frameworks that give your brand a distinctive, ownable voice in a
-              crowded marketplace.
-            </p>
-            <!-- Added a hyperlink for redirecting to individul services in future, currently redirecting to self -->
-            <a href="#" style="text-decoration: none">
-              <span class="svlnk"
-                >Learn More
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  stroke-width="2.5"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-                  />
-                </svg>
-              </span>
-            </a>
-          </article>
-        </div>
+          <!-- Added a hyperlink for redirecting to individul services in future, currently redirecting to self -->
+          <a href="#" style="text-decoration: none">
+            <span class="svlnk">Learn More
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>
+            </span>
+          </a>
+        </article>
+        <article class="svcard rv d2">
+          <div class="svico">⚡</div>
+          <h3>Performance Marketing</h3>
+          <p>
+            Targeted paid campaigns across Google, Meta, and beyond —
+            engineered to maximize ROAS, reduce CAC, and deliver measurable
+            revenue growth every month.
+          </p>
+          <!-- Added a hyperlink for redirecting to individul services in future, currently redirecting to self -->
+          <a href="#" style="text-decoration: none">
+            <span class="svlnk">Learn More
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>
+            </span>
+          </a>
+        </article>
+        <article class="svcard rv d3">
+          <div class="svico">✍️</div>
+          <h3>Content Creation & Branding</h3>
+          <p>
+            Compelling copywriting, stunning visuals, and engaging videos that
+            tell your brand story and drive meaningful audience connection at
+            scale.
+          </p>
+          <!-- Added a hyperlink for redirecting to individul services in future, currently redirecting to self -->
+          <a href="#" style="text-decoration: none">
+            <span class="svlnk">Learn More
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>
+            </span>
+          </a>
+        </article>
+        <article class="svcard rv d1">
+          <div class="svico">🔍</div>
+          <h3>SEO & Growth Optimization</h3>
+          <p>
+            Technical SEO, keyword strategy, and authority building that
+            drives qualified organic traffic and positions your brand on page
+            one — permanently.
+          </p>
+          <!-- Added a hyperlink for redirecting to individul services in future, currently redirecting to self -->
+          <a href="#" style="text-decoration: none">
+            <span class="svlnk">Learn More
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>
+            </span>
+          </a>
+        </article>
+        <article class="svcard rv d2">
+          <div class="svico">💻</div>
+          <h3>Website Design & Development</h3>
+          <p>
+            Conversion-optimized, mobile-first websites built with modern tech
+            stacks — fast, beautiful, and engineered to turn visitors into
+            paying customers.
+          </p>
+          <!-- Added a hyperlink for redirecting to individul services in future, currently redirecting to self -->
+          <a href="#" style="text-decoration: none">
+            <span class="svlnk">Learn More
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>
+            </span>
+          </a>
+        </article>
+        <article class="svcard rv d3">
+          <div class="svico">🎨</div>
+          <h3>Brand Positioning & Strategy</h3>
+          <p>
+            Deep market research, competitor analysis, and positioning
+            frameworks that give your brand a distinctive, ownable voice in a
+            crowded marketplace.
+          </p>
+          <!-- Added a hyperlink for redirecting to individul services in future, currently redirecting to self -->
+          <a href="#" style="text-decoration: none">
+            <span class="svlnk">Learn More
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>
+            </span>
+          </a>
+        </article>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- WHY CHOOSE US ─────────────────────────────────── -->
-    <section id="why" class="sec" aria-label="Why Choose 1neTech Media">
-      <div class="wrap">
-        <!-- Made tag in center out of grid -->
-        <div class="sechd rv" style="margin-bottom: 30px;">
-          <span class="chip">Why 1neTech</span>
-        </div>
-        <div class="whygrid">
-          <!-- left -->
-          <div>
-            <div class="rv">
-              <h2 class="h2 nowrap-title">One Agency. <em>Total Growth</em></h2>
+  <!-- WHY CHOOSE US ─────────────────────────────────── -->
+  <section id="why" class="sec" aria-label="Why Choose 1neTech Media">
+    <div class="wrap">
+      <!-- Made tag in center out of grid -->
+      <div class="sechd rv" style="margin-bottom: 30px;">
+        <span class="chip">Why 1neTech</span>
+      </div>
+      <div class="whygrid">
+        <!-- left -->
+        <div>
+          <div class="rv">
+            <h2 class="h2 nowrap-title">One Agency. <em>Total Growth</em></h2>
+          </div>
+          <div class="wpts">
+            <div class="wpt rv d1">
+              <div class="wpn">01</div>
+              <div>
+                <h4>One Integrated Growth System</h4>
+                <p>
+                  Instead of juggling multiple agencies, you get one cohesive
+                  system where strategy, creative, and performance work in
+                  sync to compound your results.
+                </p>
+              </div>
             </div>
-            <div class="wpts">
-              <div class="wpt rv d1">
-                <div class="wpn">01</div>
-                <div>
-                  <h4>One Integrated Growth System</h4>
-                  <p>
-                    Instead of juggling multiple agencies, you get one cohesive
-                    system where strategy, creative, and performance work in
-                    sync to compound your results.
-                  </p>
-                </div>
+            <div class="wpt rv d2">
+              <div class="wpn">02</div>
+              <div>
+                <h4>Strategy + Creativity + Data</h4>
+                <p>
+                  Every campaign is informed by audience insights and backed
+                  by data — ensuring every piece of creative actually performs
+                  and drives outcomes.
+                </p>
               </div>
-              <div class="wpt rv d2">
-                <div class="wpn">02</div>
-                <div>
-                  <h4>Strategy + Creativity + Data</h4>
-                  <p>
-                    Every campaign is informed by audience insights and backed
-                    by data — ensuring every piece of creative actually performs
-                    and drives outcomes.
-                  </p>
-                </div>
+            </div>
+            <div class="wpt rv d3">
+              <div class="wpn">03</div>
+              <div>
+                <h4>Measurable ROI-Focused Execution</h4>
+                <p>
+                  We track what matters: revenue, leads, conversions, and
+                  growth. Clear reporting, honest results — no vanity metrics,
+                  just real business outcomes.
+                </p>
               </div>
-              <div class="wpt rv d3">
-                <div class="wpn">03</div>
-                <div>
-                  <h4>Measurable ROI-Focused Execution</h4>
-                  <p>
-                    We track what matters: revenue, leads, conversions, and
-                    growth. Clear reporting, honest results — no vanity metrics,
-                    just real business outcomes.
-                  </p>
-                </div>
-              </div>
-              <!-- <div class="wpt rv d4">
+            </div>
+            <!-- <div class="wpt rv d4">
                 <div class="wpn">04</div>
                 <div>
                   <h4>Technology-Driven Scalability</h4>
@@ -468,433 +381,585 @@
                   </p>
                 </div>
               </div> -->
-            </div>
-          </div>
-          <!-- right panel -->
-          <div class="wpanel rv">
-            <h3>Our Growth Formula</h3>
-            <p>
-              Every client engagement is built on this proven framework that
-              consistently delivers exceptional outcomes across industries.
-            </p>
-            <div class="wmetrics">
-              <div class="wm">
-                <span class="wmv">5×</span>
-                <div class="wml">Avg. ROI Delivered</div>
-              </div>
-              <div class="wm">
-                <span class="wmv">143%</span>
-                <div class="wml">Avg. Traffic Growth</div>
-              </div>
-              <div class="wm">
-                <span class="wmv">98%</span>
-                <div class="wml">Client Satisfaction</div>
-              </div>
-              <div class="wm">
-                <span class="wmv">60</span>
-                <div class="wml">Days to First Results</div>
-              </div>
-            </div>
-            <div class="wtags">
-              <span class="wtag">Meta Ads</span>
-              <span class="wtag">Google Ads</span>
-              <span class="wtag">SEO</span>
-              <span class="wtag">CRM</span>
-              <span class="wtag">Analytics</span>
-              <span class="wtag">Automation</span>
-            </div>
           </div>
         </div>
-        <!-- Removed from grid and made in center with bottom margin 0px -->
-        <div class="wquote rv d5 sechd" style="margin-bottom: 0px;">
+        <!-- right panel -->
+        <div class="wpanel rv">
+          <h3>Our Growth Formula</h3>
           <p>
-            Your success is our strategy.
-            <span>Your growth is our mission.</span>
+            Every client engagement is built on this proven framework that
+            consistently delivers exceptional outcomes across industries.
           </p>
-        </div>
-        
-      </div>
-    </section>
-
-    <!-- MARKETING GOALS ───────────────────────────────── -->
-    <section id="goals" class="sec" aria-label="Marketing Goals">
-      <div class="wrap">
-        <div class="ghd rv">
-          <span class="chip chip-y">What We Target</span>
-        </div>
-        <!-- removed from main tag and centered the text -->
-        <div>
-          <h2 class="h2 h2w nowrap-title" style="text-align: center;">
-            Goals That <span style="color: var(--yellow)">Actually</span> Move
-            Businesses
-          </h2>
-          <p class="sub subw" style="margin-left: auto; margin-right: auto; max-width: max-content; text-align: center;">
-            Every strategy we build is engineered around four core business outcomes — clear, measurable, and real.
-          </p>
-        </div>
-        <div class="ggrid">
-          <div class="gcard rv d1">
-            <span class="gico">💰
-            <h3>Revenue Growth</h3></span>
-            <p>
-              We build acquisition funnels, conversion pathways, and retention
-              systems that directly increase your top-line revenue month after
-              month.
-            </p>
-            <span class="gtag">+40–120% Revenue Lift</span>
+          <div class="wmetrics">
+            <div class="wm">
+              <span class="wmv">5×</span>
+              <div class="wml">Avg. ROI Delivered</div>
+            </div>
+            <div class="wm">
+              <span class="wmv">143%</span>
+              <div class="wml">Avg. Traffic Growth</div>
+            </div>
+            <div class="wm">
+              <span class="wmv">98%</span>
+              <div class="wml">Client Satisfaction</div>
+            </div>
+            <div class="wm">
+              <span class="wmv">60</span>
+              <div class="wml">Days to First Results</div>
+            </div>
           </div>
-          <div class="gcard rv d2">
-            <span class="gico">🌍
-            <h3>Market Expansion</h3></span>
-            <p>
-              Break into new geographies, demographics, or verticals with
-              targeted campaigns, localization strategies, and scalable ad
-              infrastructure.
-            </p>
-            <span class="gtag">New Markets in 90 Days</span>
-          </div>
-          <div class="gcard rv d3">
-            <span class="gico">📉
-            <h3>Profit Optimization</h3></span>
-            <p>
-              Reduce customer acquisition costs, increase lifetime value, and
-              optimize ad spend allocation to maximize net margin - not just
-              revenue.
-            </p>
-            <span class="gtag">30–50% CAC Reduction</span>
-          </div>
-          <div class="gcard rv d4">
-            <span class="gico">⚙️
-            <h3>Scalable Growth</h3></span>
-            <p>
-              Systems and automation frameworks that let you double or triple
-              revenue without doubling headcount. Growth that compounds, not
-              just spikes.
-            </p>
-            <span class="gtag">Systematic Scaling</span>
+          <div class="wtags">
+            <span class="wtag">Meta Ads</span>
+            <span class="wtag">Google Ads</span>
+            <span class="wtag">SEO</span>
+            <span class="wtag">CRM</span>
+            <span class="wtag">Analytics</span>
+            <span class="wtag">Automation</span>
           </div>
         </div>
       </div>
-    </section>
+      <!-- Removed from grid and made in center with bottom margin 0px -->
+      <div class="wquote rv d5 sechd" style="margin-bottom: 0px;">
+        <p>
+          Your success is our strategy.
+          <span>Your growth is our mission.</span>
+        </p>
+      </div>
 
-    <!-- AUDIENCE FRAMEWORK ────────────────────────────── -->
-    <section id="audience" class="sec" aria-label="Audience Framework">
-      <div class="wrap">
-        <div class="audhd rv">
-          <span class="chip">Audience Intelligence</span>
-          <h2 class="h2 nowrap-title">
-            Reaching the <b>Right People</b>, Every Time
-          </h2>
-          <p class="sub" style="margin-left: auto; margin-right: auto; max-width: max-content;">
-            We build precise audience frameworks so your message reaches the
-            exact people most likely to buy — on the platforms they live on.
+    </div>
+  </section>
+
+  <!-- MARKETING GOALS ───────────────────────────────── -->
+  <section id="goals" class="sec" aria-label="Marketing Goals">
+    <div class="wrap">
+      <div class="ghd rv">
+        <span class="chip chip-y">What We Target</span>
+      </div>
+      <!-- removed from main tag and centered the text -->
+      <div>
+        <h2 class="h2 h2w nowrap-title" style="text-align: center;">
+          Goals That <span style="color: var(--yellow)">Actually</span> Move
+          Businesses
+        </h2>
+        <p class="sub subw" style="margin-left: auto; margin-right: auto; max-width: max-content; text-align: center;">
+          Every strategy we build is engineered around four core business outcomes — clear, measurable, and real.
+        </p>
+      </div>
+      <div class="ggrid">
+        <div class="gcard rv d1">
+          <span class="gico">💰
+            <h3>Revenue Growth</h3>
+          </span>
+          <p>
+            We build acquisition funnels, conversion pathways, and retention
+            systems that directly increase your top-line revenue month after
+            month.
           </p>
+          <span class="gtag">+40–120% Revenue Lift</span>
         </div>
-        <div class="audgrid">
-          <div class="audcard rv d1">
-            <div class="audico">👥</div>
-            <div class="audbody">
-              <h3>Demographic Profiling</h3>
-              <p>
-                We build granular audience personas based on age, income,
-                education, occupation, and life stage — ensuring your campaigns
-                speak directly to your highest-value customers.
-              </p>
-              <div class="audtags">
-                <span class="audtag">Age &amp; Gender</span>
-                <span class="audtag">Income Segments</span>
-                <span class="audtag">Life Stage</span>
-              </div>
-            </div>
-          </div>
-          <div class="audcard rv d2">
-            <div class="audico">📍</div>
-            <div class="audbody">
-              <h3>Geographic Targeting</h3>
-              <p>
-                City, state, radius, or hyper-local targeting — we place your
-                brand in front of audiences in the exact locations that drive
-                the highest conversion probability.
-              </p>
-              <div class="audtags">
-                <span class="audtag">Hyper-Local</span>
-                <span class="audtag">Regional</span>
-                <span class="audtag">National</span>
-              </div>
-            </div>
-          </div>
-          <div class="audcard rv d3">
-            <div class="audico">🧠</div>
-            <div class="audbody">
-              <h3>Behavioral Intelligence</h3>
-              <p>
-                Using purchase intent signals, browsing patterns, content
-                interactions, and retargeting data to reach people at precisely
-                the right moment in their buying journey.
-              </p>
-              <div class="audtags">
-                <span class="audtag">Intent Signals</span>
-                <span class="audtag">Retargeting</span>
-                <span class="audtag">Lookalikes</span>
-              </div>
-            </div>
-          </div>
-          <div class="audcard rv d4">
-            <div class="audico">📲</div>
-            <div class="audbody">
-              <h3>Platform Strategy</h3>
-              <p>
-                Instagram and Facebook are our primary battlegrounds. We craft
-                platform-native content and ad formats that dominate feeds,
-                Stories, and Reels for maximum reach.
-              </p>
-              <div class="audtags">
-                <span class="audtag">Instagram</span>
-                <span class="audtag">Facebook</span>
-                <span class="audtag">Reels &amp; Stories</span>
-              </div>
-            </div>
-          </div>
+        <div class="gcard rv d2">
+          <span class="gico">🌍
+            <h3>Market Expansion</h3>
+          </span>
+          <p>
+            Break into new geographies, demographics, or verticals with
+            targeted campaigns, localization strategies, and scalable ad
+            infrastructure.
+          </p>
+          <span class="gtag">New Markets in 90 Days</span>
+        </div>
+        <div class="gcard rv d3">
+          <span class="gico">📉
+            <h3>Profit Optimization</h3>
+          </span>
+          <p>
+            Reduce customer acquisition costs, increase lifetime value, and
+            optimize ad spend allocation to maximize net margin - not just
+            revenue.
+          </p>
+          <span class="gtag">30–50% CAC Reduction</span>
+        </div>
+        <div class="gcard rv d4">
+          <span class="gico">⚙️
+            <h3>Scalable Growth</h3>
+          </span>
+          <p>
+            Systems and automation frameworks that let you double or triple
+            revenue without doubling headcount. Growth that compounds, not
+            just spikes.
+          </p>
+          <span class="gtag">Systematic Scaling</span>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- CTA BAND ──────────────────────────────────────── -->
-    <section id="cta" aria-label="Call to Action">
-      <div class="wrap">
-        <div class="ctain rv">
-          <span class="ctachip">Ready to Scale?</span>
-          <h2 class="ctah2 nowrap-title">
-            Think One. <span class="yl">Grow Beyond.</span>
-          </h2>
-          <p class="ctap" style="max-width: max-content;">
-            Join 200+ brands that chose to stop guessing and start growing. One
-            integrated system, one team, one mission - yours.
-          </p>
-          <div class="ctabtns">
-            <a href="#contact" class="btn btn-yellow">
-              Let's Build Your Brand
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                stroke-width="2.5"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-                />
-              </svg>
-            </a>
-            <a href="#services" class="btn btn-ghost">Explore Services</a>
-          </div>
-        </div>
+  <!-- AUDIENCE FRAMEWORK ────────────────────────────── -->
+  <section id="audience" class="sec" aria-label="Audience Framework">
+    <div class="wrap">
+      <div class="audhd rv">
+        <span class="chip">Audience Intelligence</span>
+        <h2 class="h2 nowrap-title">
+          Reaching the <b>Right People</b>, Every Time
+        </h2>
+        <p class="sub" style="margin-left: auto; margin-right: auto; max-width: max-content;">
+          We build precise audience frameworks so your message reaches the
+          exact people most likely to buy — on the platforms they live on.
+        </p>
       </div>
-    </section>
-
-    <!-- CONTACT ───────────────────────────────────────── -->
-    <section id="contact" class="sec" aria-label="Contact Us">
-      <div class="wrap">
-        <div class="sechd rv">
-          <span class="chip">Get In Touch</span>
-        </div>
-        <div class="cgrid">
-          <!-- info -->
-          <div class="cinfo">
-            <div class="rv">
-              <h2 class="h2" style="white-space: unset;">Start Your <b>Growth Journey</b> Today</h2>
-              <p class="sub">
-                Tell us about your business and goals. We'll craft a tailored
-                growth strategy - no generic pitch, no obligation.
-              </p>
-            </div>
-            <div class="rv d1">
-              <div class="cdet">
-                <div class="cico">📧</div>
-                <div>
-                  <h4>Email Us</h4>
-                  <p><a href="mailto:1netechmedia@gmail.com" style="text-decoration: none;">1netechmedia@gmail.com</a></p>
-                </div>
-              </div>
-              <div class="cdet">
-                <div class="cico">📞</div>
-                <div>
-                  <h4>Call Us</h4>
-                  <p><a href="tel:+917600492358" style="text-decoration: none;">+91 7600492358</a> / <a href="tel:+919054849682" style="text-decoration: none;">+91 9054849782</a> </p>
-                </div>
-              </div>
-              <div class="cdet">
-                <div class="cico">🕐</div>
-                <div>
-                  <h4>Instagram</h4>
-                  <p><a href="https://www.instagram.com/1netechmedia" style="text-decoration: none;" target="_blank">@1neTechMedia</a></p>
-                </div>
-              </div>
-              <div class="cdet">
-                <div class="cico">🕐</div>
-                <div>
-                  <h4>Response Time</h4>
-                  <p>Within 24 business hours</p>
-                </div>
-              </div>
-            </div>
-            <div class="trustbox rv d2">
-              <p>
-                <strong>100% Confidential.</strong> Your business information is
-                safe with us. We don't share, sell, or spam - we build
-                partnerships.
-              </p>
-            </div>
-          </div>
-          <!-- form -->
-          <div class="fwrap rv d1">
-            <h3>Free Strategy Consultation</h3>
-            <p class="fsub">
-              Fill out the form and we'll get back to you within 24 hours with a
-              personalised growth plan.
+      <div class="audgrid">
+        <div class="audcard rv d1">
+          <div class="audico">👥</div>
+          <div class="audbody">
+            <h3>Demographic Profiling</h3>
+            <p>
+              We build granular audience personas based on age, income,
+              education, occupation, and life stage — ensuring your campaigns
+              speak directly to your highest-value customers.
             </p>
-            <form id="contactForm">
-              <div class="frow">
-                <div class="fg">
-                  <label for="fname">Full Name <em>*</em></label>
-                  <input
-                    type="text"
-                    id="fname"
-                    name="name"
-                    class="fc"
-                    placeholder="John Doe"
-                    required
-                  />
-                </div>
-                <div class="fg">
-                  <label for="femail">Email Address <em>*</em></label>
-                  <input
-                    type="email"
-                    id="femail"
-                    name="email"
-                    class="fc"
-                    placeholder="john@company.com"
-                    required
-                  />
-                </div>
-              </div>
-              <div class="fg">
-                <label for="fbiz">Business Name <em>*</em></label>
-                <input
-                  type="text"
-                  id="fbiz"
-                  name="business"
-                  class="fc"
-                  placeholder="Your Company"
-                  required
-                />
-              </div>
-              <div class="fg">
-                <label for="fmsg">How can we help you grow? <em>*</em></label>
-                <textarea
-                  id="fmsg"
-                  name="message"
-                  class="fc"
-                  placeholder="Tell us about your current challenges, goals, and what you're looking to achieve with digital marketing..."
-                  required
-                ></textarea>
-              </div>
-              <div class="ffoot">
-                <button type="submit" class="btn btn-blue" id="submitBtn">
-                  Send Message
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    stroke-width="2.5"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-                    />
-                  </svg>
-                </button>
-                <p class="fnote">
-                  <strong>No spam, ever.</strong> We'll only use this to send
-                  you your strategy plan.
+            <div class="audtags">
+              <span class="audtag">Age &amp; Gender</span>
+              <span class="audtag">Income Segments</span>
+              <span class="audtag">Life Stage</span>
+            </div>
+          </div>
+        </div>
+        <div class="audcard rv d2">
+          <div class="audico">📍</div>
+          <div class="audbody">
+            <h3>Geographic Targeting</h3>
+            <p>
+              City, state, radius, or hyper-local targeting — we place your
+              brand in front of audiences in the exact locations that drive
+              the highest conversion probability.
+            </p>
+            <div class="audtags">
+              <span class="audtag">Hyper-Local</span>
+              <span class="audtag">Regional</span>
+              <span class="audtag">National</span>
+            </div>
+          </div>
+        </div>
+        <div class="audcard rv d3">
+          <div class="audico">🧠</div>
+          <div class="audbody">
+            <h3>Behavioral Intelligence</h3>
+            <p>
+              Using purchase intent signals, browsing patterns, content
+              interactions, and retargeting data to reach people at precisely
+              the right moment in their buying journey.
+            </p>
+            <div class="audtags">
+              <span class="audtag">Intent Signals</span>
+              <span class="audtag">Retargeting</span>
+              <span class="audtag">Lookalikes</span>
+            </div>
+          </div>
+        </div>
+        <div class="audcard rv d4">
+          <div class="audico">📲</div>
+          <div class="audbody">
+            <h3>Platform Strategy</h3>
+            <p>
+              Instagram and Facebook are our primary battlegrounds. We craft
+              platform-native content and ad formats that dominate feeds,
+              Stories, and Reels for maximum reach.
+            </p>
+            <div class="audtags">
+              <span class="audtag">Instagram</span>
+              <span class="audtag">Facebook</span>
+              <span class="audtag">Reels &amp; Stories</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND ──────────────────────────────────────── -->
+  <section id="cta" aria-label="Call to Action">
+    <div class="wrap">
+      <div class="ctain rv">
+        <span class="ctachip">Ready to Scale?</span>
+        <h2 class="ctah2 nowrap-title">
+          Think One. <span class="yl">Grow Beyond.</span>
+        </h2>
+        <p class="ctap" style="max-width: max-content;">
+          Join 200+ brands that chose to stop guessing and start growing. One
+          integrated system, one team, one mission - yours.
+        </p>
+        <div class="ctabtns">
+          <a href="#contact" class="btn btn-yellow">
+            Let's Build Your Brand
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+              stroke-width="2.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+            </svg>
+          </a>
+          <a href="#services" class="btn btn-ghost">Explore Services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS ───────────────────────────────────── -->
+  <section id="testimonials" class="sec tc-section" aria-label="Client Testimonials">
+    <div class="wrap">
+      <div class="tc-inner">
+
+        <!-- heading -->
+        <div style="text-align:center">
+          <span class="tc-chip">
+            <i class="tc-dot-sm"></i>
+            Client Testimonials
+          </span>
+        </div>
+
+        <h2 class="h2 tc-title">
+          Brands That <em>Grew Beyond</em>
+        </h2>
+
+        <!-- track -->
+        <div class="tc-track-wrap">
+          <div class="tc-track" id="tcTrack">
+
+            <!-- SLIDE 1 -->
+            <div class="tc-slide">
+              <div class="tc-card">
+
+                <span class="tc-quote-mark">&ldquo;</span>
+
+                <p class="tc-text">
+                  1neTech Media completely transformed our digital presence.
+                  Within 60 days of onboarding, our organic traffic doubled
+                  and our Meta ad ROAS jumped from 1.8× to 4.3×.
+                  Their strategy-first approach is genuinely different —
+                  they actually understand our customers better than we did.
                 </p>
+
+                <div class="tc-author">
+                  <div class="tc-avatar tc-av-yellow">RK</div>
+
+                  <div class="tc-info">
+                    <div class="tc-stars">★★★★★</div>
+
+                    <h4>Rohan Kapoor</h4>
+
+                    <p>Founder, StyleNest India</p>
+                  </div>
+                </div>
               </div>
-            </form>
+            </div>
+
+            <!-- SLIDE 2 -->
+            <div class="tc-slide">
+              <div class="tc-card">
+
+                <span class="tc-quote-mark">&ldquo;</span>
+
+                <p class="tc-text">
+                  We had tried three agencies before 1neTech.
+                  None of them spoke in terms of revenue —
+                  they all just talked about impressions and reach.
+
+                  1neTech built us a full-funnel system that brought
+                  our CAC down by 38% in the first quarter.
+                  That's the difference.
+                </p>
+
+                <div class="tc-author">
+                  <div class="tc-avatar tc-av-blue">PS</div>
+
+                  <div class="tc-info">
+                    <div class="tc-stars">★★★★★</div>
+
+                    <h4>Priya Shah</h4>
+
+                    <p>CEO, PureEarth Wellness</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- SLIDE 3 -->
+            <div class="tc-slide">
+              <div class="tc-card">
+
+                <span class="tc-quote-mark">&ldquo;</span>
+
+                <p class="tc-text">
+                  The website they built for us isn't just beautiful —
+                  it converts. Our bounce rate dropped from 74% to 41%
+                  and lead form submissions went up 5×.
+
+                  The team is responsive, proactive,
+                  and genuinely invested in our growth.
+                </p>
+
+                <div class="tc-author">
+                  <div class="tc-avatar tc-av-green">AM</div>
+
+                  <div class="tc-info">
+                    <div class="tc-stars">★★★★★</div>
+
+                    <h4>Ankit Mehta</h4>
+
+                    <p>Director, BuildRight Realty</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- SLIDE 4 -->
+            <div class="tc-slide">
+              <div class="tc-card">
+
+                <span class="tc-quote-mark">&ldquo;</span>
+
+                <p class="tc-text">
+                  Their content and branding work put us on the map.
+                  Our Instagram went from 1,200 followers to 18,000
+                  in under 5 months — all organic.
+
+                  The brand identity they developed for us is something
+                  we're genuinely proud of.
+                </p>
+
+                <div class="tc-author">
+                  <div class="tc-avatar tc-av-red">ND</div>
+
+                  <div class="tc-info">
+                    <div class="tc-stars">★★★★★</div>
+
+                    <h4>Neha Desai</h4>
+
+                    <p>Co-Founder, Artisana Bakes</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- SLIDE 5 -->
+            <div class="tc-slide">
+              <div class="tc-card">
+
+                <span class="tc-quote-mark">&ldquo;</span>
+
+                <p class="tc-text">
+                  We scaled from ₹8L/month to ₹31L/month in revenue
+                  within 6 months of working with 1neTech.
+
+                  The SEO strategy they built is still compounding —
+                  we now rank on page one for 40+ keywords.
+                </p>
+
+                <div class="tc-author">
+                  <div class="tc-avatar tc-av-purple">VJ</div>
+
+                  <div class="tc-info">
+                    <div class="tc-stars">★★★★★</div>
+
+                    <h4>Vikas Joshi</h4>
+
+                    <p>Managing Director, TechGear Pro</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- FOOTER ────────────────────────────────────────── -->
-    <footer id="footer" role="contentinfo">
-      <div class="wrap">
-        <div class="ftgrid">
-          <div class="fb">
-            <a href="#home" class="logo" aria-label="1neTech Media">
-              <!-- <div class="lbox">1</div> -->
-              <span>1neTech Media</span>
-            </a>
-            <p>
-              Integrated digital marketing solutions that combine strategy,
-              creativity, and technology to build brands that scale with
-              confidence.
+        <!-- controls -->
+        <div class="tc-controls">
+
+          <button class="tc-btn" id="tcPrev" aria-label="Previous testimonial">
+            &#8592;
+          </button>
+
+          <div class="tc-dots" id="tcDots"></div>
+
+          <button class="tc-btn" id="tcNext" aria-label="Next testimonial">
+            &#8594;
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT ───────────────────────────────────────── -->
+  <section id="contact" class="sec" aria-label="Contact Us">
+    <div class="wrap">
+      <div class="sechd rv">
+        <span class="chip">Get In Touch</span>
+      </div>
+      <div class="cgrid">
+        <!-- info -->
+        <div class="cinfo">
+          <div class="rv">
+            <h2 class="h2" style="white-space: unset;">Start Your <b>Growth Journey</b> Today</h2>
+            <p class="sub">
+              Tell us about your business and goals. We'll craft a tailored
+              growth strategy - no generic pitch, no obligation.
             </p>
-            <div class="socs" aria-label="Social media">
-              <a href="#" class="soc" aria-label="Instagram">📸</a>
-              <a href="#" class="soc" aria-label="Facebook">📘</a>
-              <a href="#" class="soc" aria-label="LinkedIn">💼</a>
-              <a href="#" class="soc" aria-label="Twitter">🐦</a>
-              <a href="#" class="soc" aria-label="YouTube">▶️</a>
+          </div>
+          <div class="rv d1">
+            <div class="cdet">
+              <div class="cico">📧</div>
+              <div>
+                <h4>Email Us</h4>
+                <p><a href="mailto:1netechmedia@gmail.com" style="text-decoration: none;">1netechmedia@gmail.com</a></p>
+              </div>
+            </div>
+            <div class="cdet">
+              <div class="cico">📞</div>
+              <div>
+                <h4>Call Us</h4>
+                <p><a href="tel:+917600492358" style="text-decoration: none;">+91 7600492358</a> / <a
+                    href="tel:+919054849682" style="text-decoration: none;">+91 9054849782</a> </p>
+              </div>
+            </div>
+            <div class="cdet">
+              <div class="cico">🕐</div>
+              <div>
+                <h4>Instagram</h4>
+                <p><a href="https://www.instagram.com/1netechmedia" style="text-decoration: none;"
+                    target="_blank">@1neTechMedia</a></p>
+              </div>
+            </div>
+            <div class="cdet">
+              <div class="cico">🕐</div>
+              <div>
+                <h4>Response Time</h4>
+                <p>Within 24 business hours</p>
+              </div>
             </div>
           </div>
-          <div class="fcol">
-            <h4>Company</h4>
-            <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About Us</a></li>
-              <li><a href="#why">Why Choose Us</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
-          <div class="fcol">
-            <h4>Services</h4>
-            <ul>
-              <li><a href="#services">Social Media</a></li>
-              <li><a href="#services">Performance Ads</a></li>
-              <li><a href="#services">Content & Branding</a></li>
-              <li><a href="#services">SEO & Growth</a></li>
-              <li><a href="#services">Web Development</a></li>
-            </ul>
-          </div>
-          <div class="fcol">
-            <h4>Get In Touch</h4>
-            <ul>
-              <li>
-                <a href="mailto:1netechmedia@gmail.com">1netechmedia@gmail.com</a>
-              </li>
-              <li><a href="tel:+917600492358">+91 7600492358</a> / <a href="tel:+919054849682" style="text-decoration: none;">+91 9054849782</a> </li>
-              <li><a href="#contact">Free Consultation</a></li>
-              <li><a href="#contact">Book a Call</a></li>
-            </ul>
+          <div class="trustbox rv d2">
+            <p>
+              <strong>100% Confidential.</strong> Your business information is
+              safe with us. We don't share, sell, or spam - we build
+              partnerships.
+            </p>
           </div>
         </div>
-        <div class="fbot">
-          <p>© 2026 <span>1neTech Media</span>. All rights reserved.</p>
-          <p class="fbottag">Think One. Grow Beyond.</p>
-          <p>
-            <a href="#" class="flink">Privacy Policy</a>
-            <a href="#" class="flink">Terms of Service</a>
+        <!-- form -->
+        <div class="fwrap rv d1">
+          <h3>Free Strategy Consultation</h3>
+          <p class="fsub">
+            Fill out the form and we'll get back to you within 24 hours with a
+            personalised growth plan.
           </p>
+          <form id="contactForm">
+            <div class="frow">
+              <div class="fg">
+                <label for="fname">Full Name <em>*</em></label>
+                <input type="text" id="fname" name="name" class="fc" placeholder="John Doe" required />
+              </div>
+              <div class="fg">
+                <label for="femail">Email Address <em>*</em></label>
+                <input type="email" id="femail" name="email" class="fc" placeholder="john@company.com" required />
+              </div>
+            </div>
+            <div class="fg">
+              <label for="fbiz">Business Name <em>*</em></label>
+              <input type="text" id="fbiz" name="business" class="fc" placeholder="Your Company" required />
+            </div>
+            <div class="fg">
+              <label for="fmsg">How can we help you grow? <em>*</em></label>
+              <textarea id="fmsg" name="message" class="fc"
+                placeholder="Tell us about your current challenges, goals, and what you're looking to achieve with digital marketing..."
+                required></textarea>
+            </div>
+            <div class="ffoot">
+              <button type="submit" class="btn btn-blue" id="submitBtn">
+                Send Message
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                  stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                </svg>
+              </button>
+              <p class="fnote">
+                <strong>No spam, ever.</strong> We'll only use this to send
+                you your strategy plan.
+              </p>
+            </div>
+          </form>
         </div>
       </div>
-    </footer>
+    </div>
+  </section>
 
-    <!-- SCRIPTS ───────────────────────────────────────── -->
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script src="script.js"></script>
-  </body>
+  <!-- FOOTER ────────────────────────────────────────── -->
+  <footer id="footer" role="contentinfo">
+    <div class="wrap">
+      <div class="ftgrid">
+        <div class="fb">
+          <a href="#home" class="logo" aria-label="1neTech Media">
+            <!-- <div class="lbox">1</div> -->
+            <span>1neTech Media</span>
+          </a>
+          <p>
+            Integrated digital marketing solutions that combine strategy,
+            creativity, and technology to build brands that scale with
+            confidence.
+          </p>
+          <div class="socs" aria-label="Social media">
+            <a href="#" class="soc" aria-label="Instagram">📸</a>
+            <a href="#" class="soc" aria-label="Facebook">📘</a>
+            <a href="#" class="soc" aria-label="LinkedIn">💼</a>
+            <a href="#" class="soc" aria-label="Twitter">🐦</a>
+            <a href="#" class="soc" aria-label="YouTube">▶️</a>
+          </div>
+        </div>
+        <div class="fcol">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#why">Why Choose Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="fcol">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Social Media</a></li>
+            <li><a href="#services">Performance Ads</a></li>
+            <li><a href="#services">Content & Branding</a></li>
+            <li><a href="#services">SEO & Growth</a></li>
+            <li><a href="#services">Web Development</a></li>
+          </ul>
+        </div>
+        <div class="fcol">
+          <h4>Get In Touch</h4>
+          <ul>
+            <li>
+              <a href="mailto:1netechmedia@gmail.com">1netechmedia@gmail.com</a>
+            </li>
+            <li><a href="tel:+917600492358">+91 7600492358</a> / <a href="tel:+919054849682"
+                style="text-decoration: none;">+91 9054849782</a> </li>
+            <li><a href="#contact">Free Consultation</a></li>
+            <li><a href="#contact">Book a Call</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="fbot">
+        <p>© 2026 <span>1neTech Media</span>. All rights reserved.</p>
+        <p class="fbottag">Think One. Grow Beyond.</p>
+        <p>
+          <a href="#" class="flink">Privacy Policy</a>
+          <a href="#" class="flink">Terms of Service</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS ───────────────────────────────────────── -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
 </html>
